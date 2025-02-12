@@ -1,0 +1,4 @@
+CREATE TABLE eventos (
+    id_evento INT PRIMARY KEY,
+    data_string VARCHAR(10)
+);
