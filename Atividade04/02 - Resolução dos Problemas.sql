@@ -1,11 +1,8 @@
 -- Consulta 1: Retornar a média de Notas dos Alunos em história.
 
-SELECT
-    AVG(VALOR_NOTA) MEDIA
-FROM
-    NOTAS
-WHERE
-    ID_DISCIPLINA = 2;
+SELECT AVG(VALOR_NOTA) MEDIA
+FROM NOTAS
+WHERE ID_DISCIPLINA = 2;
 
 
 -- Consulta 2: Retornar as informações dos alunos cujo Nome começa com 'A'.
@@ -17,10 +14,7 @@ WHERE NOME_ALUNO LIKE 'A%';
 
 -- Consulta 3: Buscar apenas os alunos que fazem aniversário em fevereiro.
 
-SELECT
-    *
-FROM
-    ALUNOS
+SELECT * FROM ALUNOS
 WHERE STRFTIME('%m', DATA_NASCIMENTO) = '02';
 
 
